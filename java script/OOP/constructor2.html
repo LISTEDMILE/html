@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONSTRUCTORS
+        </title>
+        <script>
+
+
+//  here class is defined with a constructor in which can be used to store multiple entries .....
+
+
+
+
+class human{
+
+
+
+    // constructor works when the class is initialized  on initialization when we want sone code.....
+
+    
+            constructor(name,lastname,age){
+                this.firstname=name;
+                this.lastname=lastname;
+                this.age=age;
+
+            }
+
+
+            /// this is called method like the function but fo class .....
+
+
+            details(){
+                document.getElementById('name').innerHTML=this.firstname;
+                document.getElementById('lastname').innerHTML=this.lastname;
+                document.getElementById('age').innerHTML=this.age;
+            }
+
+            }
+
+
+          
+
+      
+    
+           
+  
+
+
+            function roshan1(){
+                var roshan=new human('roshan','singh',50);
+                roshan.details();
+            }
+
+            function rakesh1(){
+                var rakesh=new human('rakesh','prajapati',30);
+                rakesh.details();
+            }
+
+            function rakhi1(){
+                var rakhi=new human('rakhi','mishra',25);
+                rakhi.details();
+            }
+
+            function rahul1(){
+                var rahul=new human('rahul','negi',15);
+                rahul.details();
+            }
+        </script>
+        <style>
+            button{
+                background-color: aqua;
+                height:150px;
+                width:400px;
+                font-size: 40px;
+            }
+            #d1{
+                width:100vw;
+                display:flex;
+                height:50vh;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-content: space-around;
+               
+             
+            }
+            h1{
+                color:white;
+                text-align: center;
+                margin-top:20px;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <div id="d1">
+            <button onclick="roshan1()">
+                roshan
+            </button>
+            <button onclick="rakesh1()">
+                rakesh
+            </button>
+            <button onclick="rakhi1()">
+               rakhi
+            </button>
+            <button onclick="rahul1()">
+                rahul
+            </button>
+        </div>
+
+        <h1 id="name">
+            NAME
+        </h1>
+        <h1 id="lastname">
+            LAST NAME
+        </h1>
+        <h1 id="age">
+            AGE
+        </h1>
+    </body>
+</html>

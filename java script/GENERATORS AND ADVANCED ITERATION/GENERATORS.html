@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           GENERATORS
+        </title>
+
+        <script>
+
+            // generator is a function when we want function to stop at a given point
+            ///  (  yield  ) can contain any type of value
+           /// function runs till first yield comes after that terminates now if we again call the function it will start from next line of this yield ........
+
+           
+           
+            function* like(){
+            console.log("first");
+            yield 2;
+            var x=4;
+            yield x;
+            console.log("something");
+            yield "this";
+            yield "that";
+
+           }
+
+// generator should first stored in a variable///......
+           let like1=like();
+
+           // (  next()  ) is a function used to call a (  generator  ) it calls the function to upcoming (  yield  ).....
+         console.log(like1.next());
+         console.log(like1.next());
+         console.log(like1.next());
+
+         // (  next().value  ) is used if we only wants value to log.....
+         console.log(like1.next().value);
+         console.log(like1.next());
+         console.log(like1.next());
+         console.log(like1.next());
+
+
+         // if all yields are used now remaining line will be called out and (  done  ) will be (  true  ) and (  value  )  will be (  undefined  ).....
+
+          
+function* gen(){
+    let i=0;
+    while(true){
+        i++;
+        yield i;
+    }
+}
+
+let gen1=gen();
+
+         function create(){
+            console.log(gen1.next().value);
+         }
+           </script>
+    </head>
+    <body bgcolor="black">
+<h1 style="color:white">
+    check console....
+</h1>
+        <button onclick="create()">
+            Click to create
+        </button>
+    </body>
+</html>

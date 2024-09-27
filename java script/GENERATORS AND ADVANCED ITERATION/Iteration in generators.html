@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ITERATION IN GENERATORS
+        </title>
+
+        <script>
+            function* iterate(){
+                yield 1;
+                yield 2;
+                yield 3;
+            }
+
+            let ite=iterate();
+            for (let value of ite){
+                console.log(value);
+            }
+  
+           </script>
+    </head>
+    <body bgcolor="black">
+
+    </body>
+</html>

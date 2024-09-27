@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  REDIRECTIION OF PAGES  </title>
+		<script>
+			
+            function redirect_by_location(){
+
+                // used to ridirect to some address
+
+                 location.replace("http://127.0.0.1:3000/html/HTML%20PRACTICAL/java%20script/jsf.html");
+            }
+
+            function redirect_by_window(){
+
+                //also redirects
+
+                //see syntax also
+                
+                window.location="http://127.0.0.1:3000/html/HTML%20PRACTICAL/java%20script/jsf.html";
+            }
+
+            function timer(){
+
+                //used if function is to be called after a certain time
+
+                //1000 === 1second
+
+                setTimeout('redirect_by_window()',5000);
+            }
+
+
+
+
+		</script>
+	</head>
+
+	<body bgcolor="black" text="white">
+
+        <div style="border:2px solid red">
+            <button onclick="redirect_by_location()">
+                Click here to open first java script project by location.replace method
+            </button>
+
+        </div>
+        
+        <br>
+
+        <div style="border:2px solid yellow">
+
+            <br>
+
+            Document will be launched after 5 seconds of clicking
+
+            <br><br>
+            
+            <button onclick="timer()">
+                Click here to open first java script project by timeout and window.location method
+            </button>
+		
+        </div>
+
+	</body>
+</html>

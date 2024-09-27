@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            OBJECT ORIENTED PROGRAMMING
+        </title>
+    </head>
+    <BODY>
+
+        <script>
+            //ITS A OBJECT CREATED WITH SOME DATA
+        var human={
+            a:"YAAAAAA",
+            b:5,
+            ty(){
+                document.write("SOMETHING");
+             
+            }
+        }
+
+        //ACCESS KARNE KE LIYE NAME.JO ACCESS KARNA H
+human.ty();
+document.write(human.a);
+
+
+function loghuman(){
+
+// poora object log ho jaega    
+console.log(human)
+}
+
+function loghuman_a(){
+
+    //jo object (human ) me a h wo log ho jaega
+
+
+    console.log(human.a)
+}
+
+function loghuman_ownpc(){
+
+    //has own property me jo dala if it exist in the given object then true else false
+    
+    console.log(human.hasOwnProperty("c"));
+}
+
+    function loghuman_ownpb(){
+
+    //has own property me jo dala if it exist in the given object then true else false
+
+    console.log(human.hasOwnProperty("b"));
+}
+
+
+    </script>
+
+<button onclick="loghuman_a()">
+log human a
+</button>
+
+<button onclick="loghuman()">
+    log human whole
+    </button>
+
+
+    <button onclick="loghuman_ownpc()">
+        do log human has own property with c        </button>
+
+
+        <button onclick="loghuman_ownpb()">
+            do log human has own property with b      </button>
+    </BODY>
+</html>

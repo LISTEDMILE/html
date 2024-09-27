@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>  Opening and Closing Windows  </title>
+
+        <script>
+
+            var r;
+
+            function open1(){
+
+                //can use window in place of document
+
+                //var name=document /windiw .open("url or nothing to create blank", "which page","orientation of the window")
+
+                /*  _blank == new window
+                _parent == that window
+                _self == that window me ambedded
+                _top
+                         */
+
+                r=document.open("http://127.0.0.1:3000/html/HTML%20PRACTICAL/java%20script/DOM/queryselector.html","_blank","height=400px,width=300px,left=200px,top=200px");
+            }
+
+            function close1(){
+                r.close();
+            }
+        </script>
+	</head>
+
+	<body bgcolor="black" text="white">
+
+        <h1> Opening and closing a window inside a web page</h1>
+
+        <button onclick="open1()">
+            Open queryselector.html file
+        </button>
+
+        <button onclick="close1()">
+            Close the window
+        </button>
+
+	</body>
+</html>

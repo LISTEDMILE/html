@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  JS  </title>
+    </head>
+    <body bgcolor="black" text="white">
+
+
+        <p Id="logicalor"></p>
+
+        <div style="border:2px solid skyblue">
+
+            <br>
+
+            <button id="getElementById1">getElementById</button>
+            <button id="addeventlistener1">addeventlistener</button>  <br>  <br>
+        
+
+            <button onclick="redirect()">
+             Click here to open file "redirect"
+            </button>
+
+            <br> <br>
+
+        </div>
+
+
+        <script language="javascript" type="text/javascript">
+            //printing
+            
+            document.write("This is a java script file.<br>");
+            document.write("This is a java script file.<br>");
+            document.write("This is a java script file.<br>");
+            document.write("This is a java script file.<br>");
+            document.write("This is a java script file.<br> <br>");
+            /*Multiple line comment Multiple line comment
+            Multiple line comment Multiple line comment*/
+            //declaring variables and doing operations
+
+            var First_No=12;
+            var Second_No=13;
+            document.write("The First_No is "+(First_No)+"<br>");
+            document.write("And the Second_No is "+(Second_No)+"<br>");
+            Sum=First_No+Second_No;
+            document.write("The sum is "+Sum+"<br> <br>");
+
+            var First_Name='Dennis';
+            var Second_Name='Smith';
+            document.write("The First_Name is "+(First_Name)+"<br>");
+            document.write("And the Second_Name is "+(Second_Name)+"<br>");
+            Sumname=First_Name+' '+Second_Name;
+            document.write('The name is '+Sumname+'<br> <br>');
+            //same as First_No+Second_No=some variable and then variable is written or typed but now First_No is changed to First_No+Second_No
+            document.write("Sum of First_No and Second_No is "+(First_No+=Second_No)+"<br> <br>");
+
+            document.write("Now the First_No is "+(First_No)+"<br>");
+            document.write("And the Second_No is "+(Second_No)+"<br>");
+            //Here value is added but First_No is not changed see next line
+            document.write("The Sum is"+(First_No+Second_No)+"<br>");
+            document.write("The Difference is "+(First_No-Second_No)+"<br>");
+            document.write("The Division is "+(First_No/Second_No)+"<br>");
+            document.write("The Remainder is "+(First_No%Second_No)+"<br>");
+            document.write("The multiplication is"+(First_No*Second_No)+"<br> <br>");
+
+            var x;
+            x=10;
+            //x++ means x+1 but print abhi x hi hoga aur bad me x=x+1 ho jaega aur jitni bar karenge 1 add hota rhega
+            document.write('x is '+ x + '<br>');
+            document.write('x + 1 is done but for now answer is '+(x++) +'<br>');
+            document.write('Now x is '+ x +'<br>');
+            //Now here print bhi x+1 and x ki value bhi x+1
+            document.write('The value is updated and x is '+(++x)+'<br> <br>');
+
+            //Same goes with all Minus
+
+            document.write('Now x is '+ x + '<br>');
+            document.write('x - 1 is done but for now answer is '+(x--) +'<br>');
+            document.write('Now x is '+ x +'<br>');
+            document.write('The value is updated and x is '+(--x)+'<br>');
+
+            //LOGICAL OPERATORS
+            // && means and ||means or and ! means not
+
+            document.write('<br>------------------------------<br>------------------------------<br>LOGICAL OPERATORS<br>------------------------------<br>------------------------------<br>');
+            var a=true;
+            var b=false;
+            document.write('<br>a='+a+'<br>b='+b+'<br>');
+            document.write('<br>a&&b<br>');
+            result=(a&&b);
+            document.write(result+'<br>');
+            document.write('<br>a||b<br>');
+            result=(a||b);
+            document.write(result+'<br>---------------------');
+
+            var a=true;
+            var b=true;
+            document.write('<br>a='+a+'<br>b='+b+'<br>');
+            document.write('<br>a&&b<br>');
+            result=(a&&b);
+            document.write(result+'<br>');
+            document.write('<br>a||b<br>');
+            result=(a||b);
+            document.write(result+'<br>---------------------');
+
+            var a=false;
+            var b=false;
+            document.write('<br>a='+a+'<br>b='+b+'<br>');
+            document.write('<br>a&&b<br>');
+            result=(a&&b);
+            document.write(result+'<br>');
+            document.write('<br>a||b<br>');
+            result=(a||b);
+            document.write(result+'<br>---------------------');
+
+            var a=true;
+            var b=false;
+            document.write('<br>a='+a+'<br>b='+b+'<br>');
+            document.write('<br>!(a&&b)<br>');
+            result=(!(a&&b));
+            document.write(result+'<br>');
+            document.write('<br>!(a||b)<br>');
+            result=(!(a||b));
+            document.write(result+'<br>---------------------');
+
+            var a=true;
+            var b=true;
+            document.write('<br>a='+a+'<br>b='+b+'<br>');
+            document.write('<br>!(a&&b)<br>');
+            result=(!(a&&b));
+            document.write(result+'<br>');
+            document.write('<br>!(a||b)<br>');
+            result=(!(a||b));
+            document.write(result+'<br>---------------------');
+
+            var a=false;
+            var b=false;
+            document.write('<br>a='+a+'<br>b='+b+'<br>');
+            document.write('<br!(a&&b)<br>');
+            result=(!(a&&b));
+            document.write(result+'<br>');
+            document.write('<br>!(a||b)<br>');
+            result=(!(a||b));
+            document.write(result+'<br>---------------------<br>');
+            
+            
+
+
+            //comparison operators
+
+            document.write('<br>------------------------------<br>------------------------------<br>COMPARISON OPERATORS<br>------------------------------<br>------------------------------<br>');
+            var x=3;
+            var y=4;
+            document.write("<br>x="+x+"<br>y="+y+"<br><br>x==y<br>")
+            result=(x==y)
+            document.write(result)
+            document.write("<br<br>x!=y<br>")
+            result=(x!=y)
+            document.write(result)
+            document.write("<br><br>x>=y<br>")
+            result=(x>=y)
+            document.write(result)
+            document.write("<br><br>x<=y<br>")
+            result=(x<=y)
+            document.write(result)
+            document.write("<br><br>x>y<br>")
+            result=(x>y)
+            document.write(result)
+            document.write("<br><br>x<y<br>")
+            result=(x<y)
+            document.write(result+"<br>---------------------")
+
+            var x=3;
+            var y=3;
+            document.write("<br><br>x="+x+"<br>y="+y+"<br><br>x==y<br>")
+            result=(x==y)
+            document.write(result)
+            document.write("<br><br>x!=y<br>")
+            result=(x!=y)
+            document.write(result)
+            document.write("<br><br>x>=y<br>")
+            result=(x>=y)
+            document.write(result)
+            document.write("<br><br>x<=y<br>")
+            result=(x<=y)
+            document.write(result)
+            document.write("<br><br>x>y<br>")
+            result=(x>y)
+            document.write(result)
+            document.write("<br><br>x<y<br>")
+            result=(x<y)
+            document.write(result+"<br>---------------------")
+
+            var x=3;
+            var y=3;
+            document.write("<br><br>x="+x+"<br>y="+y+"<br><br>x==y<br>")
+            result=(x==y)
+            document.write(result)
+            document.write("<br><br>x!=y<br>")
+            result=(x!=y)
+            document.write(result)
+            document.write("<br><br>x>=y<br>")
+            result=(x>=y)
+            document.write(result)
+            document.write("<br><br>x<=y<br>")
+            result=(x<=y)
+            document.write(result)
+            document.write("<br><br>x>y<br>")
+            result=(x>y)
+            document.write(result)
+            document.write("<br><br>x<y<br>")
+            result=(x<y)
+            document.write(result+"<br>---------------------<br>---------------------")
+
+
+
+
+            //GET ELEMENT BY ID
+
+            document.getElementById("logicalor").innerHTML="JAVA SCRIPT FUNCTIONS";
+            var a=document.getElementById("logicalor");
+            document.write("<br>",a);
+            
+
+
+           function BUTTONCLICKED1(){
+            alert("Button Clicked1")
+           }
+
+           function BUTTONCLICKED2(){
+            alert("Button Clicked2")
+           }
+
+            document.getElementById("getElementById1").onclick=BUTTONCLICKED1;
+            document.getElementById("getElementById1").onclick=BUTTONCLICKED2;
+
+
+            //yha pe overwrite nhi hoga dono hi alert chlenge
+
+
+            var btn=document.getElementById("addeventlistener1");
+            btn.addEventListener("click",BUTTONCLICKED1);
+            btn.addEventListener("click",BUTTONCLICKED2);
+
+            //to remove event listener write object.removeEventListener("same",sane,same);
+
+
+
+            function redirect(){
+
+                // used to ridirect to some address
+
+                
+                location.replace("http://127.0.0.1:3000/html/HTML%20PRACTICAL/java%20script/Beyond%20the%20basics/redirecting.html")
+            }
+
+
+        </script>
+    </body>
+</html>

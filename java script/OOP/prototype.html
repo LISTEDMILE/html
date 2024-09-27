@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PROTOTYPE
+        </title>
+        <script>
+
+
+
+//////       prototypes are the functions inside the objects        /////4
+
+
+
+
+
+const empl ={
+    x:30,
+    tax(){
+        document.write(this.x);
+    }
+};
+
+
+
+const rope={
+ x:40
+};
+
+// used to use functions in otherr object in multiple objects  ......     copy prototype;;;;
+
+
+rope.__proto__ = empl;
+
+
+        </script>
+    </head>
+    <body bgcolor="black">
+<button style = "height:60px; width:400px; color:black; background-color: aqua;" onclick="rope.tax()">
+    click to print no.
+</button>
+    </body>
+</html>

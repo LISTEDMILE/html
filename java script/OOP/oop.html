@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            OBJECTS
+        </title>
+        <script>
+
+
+
+            // we can use classess inside any object separated by (,)
+
+
+
+
+            var user={
+                name:"xyz",
+                sirname:"ytu",
+                login(){
+               
+                    document.getElementById('but2').style="background-color:red";
+                    document.getElementsByTagName('h1')[0].innerHTML="logedin";
+                },
+                logout(){
+               
+                    document.getElementById('but2').style="background-color:aqua";
+                    document.getElementsByTagName('h1')[0].innerHTML="logedout";
+                }
+            }
+        </script>
+    </head>
+    <style>
+        div{
+            display:flex;
+            width:100vw;
+            height:100vh;
+            justify-content: center;
+            align-items: center;
+        }
+button{
+    background-color: aqua;
+    color:rgb(0, 0, 0);
+    height:600px;
+    width:600px;
+    font-size:200%;
+    margin:60px;
+    
+}
+h1{
+    font-size: 60px;
+}
+    </style>
+    <body bgcolor="black">
+<div>
+        <button id="but2">
+            <h1>
+
+            </h1>
+        </button>
+
+
+        <!--   here user.login    means    user object ke andar class ko access kar rhe h  -->
+
+
+        
+        <button id="but1" onmouseover="user.login()" onmousedown="user.logout()">
+hover
+        </button>
+        
+    </div>
+    </body>
+</html>

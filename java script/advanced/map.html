@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MAP
+    
+        </title>
+        <script>
+            var map= new Map([[true,"booleon"],["yes","answer"]]);
+            // set keys and
+            map.set("1","string");
+            map.set(1,"number");
+
+            //used to get entries;
+            console.log(map.get("1"));
+
+            // show whole Map....
+            console.warn(map);
+            console.warn(map.get("1"));
+
+            //show all the keys......
+            console.log(map.keys());
+
+            //check for the key present or not ......
+            console.log(map.has(1));
+
+            // show no. of keys or property;......
+            console.log(map.size);
+
+            console.log(map);
+            
+            //used to delete a key......
+            map.delete(true);
+            console.log(map);
+
+            map.set(true,"booleon")
+
+
+//for each means iterating     .....
+//here first parameter is value and second is key....
+            map.forEach((v,k)=>{
+                console.log("key =",k,"|| value =",v);
+            })
+
+
+//through for loop also we can get....
+            for(x of map){
+                console.log(x);
+            }
+
+            //if only want one entry...
+            for(x of map){
+                console.log(x[0]);
+            }
+
+            for(x of map){
+                console.log(x[1]);
+            }
+
+
+            //if we want without paring...
+            for ([x,y] of map){
+                console.log(x);
+                
+                
+            }
+
+
+            for ([x,y] of map){
+                console.log(y);
+                
+                
+            }
+        </script>
+    </head>
+<body bgcolor="black">
+
+</body>
+</html>

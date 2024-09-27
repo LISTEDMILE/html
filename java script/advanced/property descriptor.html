@@ -1,0 +1,80 @@
+<script>var first={
+    name:"xyz",
+    class:5,
+    sec:3,
+    place:"thatplace,",
+    region:"antarctica"
+}
+//for describing the property of our object entries....
+
+
+console.log(Object.getOwnPropertyDescriptor(first,"name"));
+
+///change element content...     
+
+
+
+first.place="new place";
+
+console.log(first.place);
+
+//   defineProperty    -----> used to define property.....  
+
+//   writable  ---->   used when we don't want entries to change further...   
+
+Object.defineProperty(first,"region",{
+    writable:false
+});
+
+console.log(first.region);
+
+first.region="africa";
+
+// output still the antarctica...   
+
+console.log(first.region);
+
+
+
+
+
+
+
+
+Object.defineProperty(first,"sec",{
+    enumerable:false
+});
+
+//show for particular call out//....   
+
+console.log("for particular call out  "+first.sec);
+
+
+// for iteration hidden....    
+
+for(let p in first){
+    console.log(p);
+}
+
+
+
+//now we cannot do writable to true....    
+
+Object.defineProperty(first,"class",{
+    configurable:false
+});
+
+console.log(Object.getOwnPropertyDescriptor(first,"class"));
+Object.defineProperty(first,"class",{
+    writable:false
+});
+console.log(Object.getOwnPropertyDescriptor(first,"class"));
+
+//error...   
+
+Object.defineProperty(first,"class",{
+    writable:true
+});
+console.log(Object.getOwnPropertyDescriptor(first,"class"));
+
+</script>

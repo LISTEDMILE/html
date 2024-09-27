@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ANIMATIONS
+        </title>
+        <style>
+            #circle{
+                width:40px;
+                height:40px;
+                background-color: cyan;
+                box-shadow: 0px 0px 80px 15px white;
+                border-radius: 100px;
+                border:solid black;
+                border-width: 0px 2px 2px 0px;
+                z-index: -1;
+                position:relative;
+              
+            }
+                input{
+                    height:40px;
+                    width:280px;
+                    font-size: 30px;
+                    text-align: center;
+                    margin:40px;
+                }
+           
+            button{
+                height:50px;
+                width:100px;
+                background-color: beige;
+                font-size: 20px;
+                font-weight: bold;
+                margin:0px 60px;
+            }
+        </style>
+        <script>
+            let obj;
+            var b =30;
+            function start1(){
+             obj=document.getElementById("circle");
+             obj.style.left='30px';
+             obj.style.top='30px';
+             
+           
+        }
+            function right(){
+
+                // parse int used to get int value out of a string...   
+                
+                obj.style.left=parseInt(obj.style.left)+b+'px';
+            }
+            function left(){
+                obj.style.left=parseInt(obj.style.left)-b+'px';
+            }
+            function up(){
+                obj.style.top=parseInt(obj.style.top)-b+'px';
+            }
+            function down(){
+                obj.style.top=parseInt(obj.style.top)+b+'px';
+            }
+            function reset(){
+                obj.style.left='30px';
+                obj.style.top='30px';
+            }
+            function asign(){
+                b=document.getElementById('offset1').value;
+                
+               
+            }
+            
+
+      window.onload=start1;
+        </script>
+    </head>
+    <body bgcolor="black">
+        <div id="circle">
+
+        </div>
+        <center>
+            <button onclick="up()">
+               UP
+            </button>
+            <div>
+            <button onclick="left()">
+                LEFT
+            </button>
+            <button onclick="right()">
+                RIGHT
+            </button>
+            </div>
+            <button onclick="down()">
+                DOWN
+            </button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+            <input type="number" placeholder="----" id="offset1">
+        </input>
+        <button onclick="asign()">
+            SET VALUE
+        </button>
+    </div>
+<br>
+<br>
+<br>
+
+
+    <button onclick="reset()">
+        RESET
+    </button>
+        </center>
+    </body>
+</html>

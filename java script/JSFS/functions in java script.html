@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  FUNCTIONS IN JAVA SCRIPT  </title>
+		
+
+		<script type="text/javascript" language="javascript">
+			
+
+			//var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+
+			const constant="constant";
+			document.write(constant+" ");
+
+			//GIVE AN ERROR IF WE CHANGE THIS
+
+			//var constant="SOMETHING"
+			//constant="constant1	";
+
+			let letv="let";
+			document.write(letv+" ");
+			letv="let1"
+			document.write(letv+" ");
+
+			//let letv="hsfklj"
+			//this will give error
+
+
+
+			var a="Global"
+			
+			function Variables(){
+				document.write(a+" ");
+			    var b="Local"
+				document.write(b+" ");
+			}
+			
+			document.write(a+" ");
+
+			//if we write b then it will not run as b is local variable of the function
+			
+			//      document.write(b+"<br>");
+			
+			Variables();
+			
+			
+			
+			
+			function addition1(a,b){
+				var sum1=a+b;
+
+				//through direct printing
+				
+				document.write(sum1);
+			}
+
+			function addition2(a,b){
+				var sum1=a+b;
+
+				//through return method
+
+				return sum1;
+			}
+
+			function addition12(a,b){
+				var i=addition2(a,b);
+				document.write(i)
+			}
+
+			var SUM=function(a,b){
+				var sum1=a+b;
+
+				return sum1;
+			}
+
+			function printbyfuctionexpression(){
+
+				//through print by function expression method
+				
+				var SUM1=SUM(document.form1.num1.value,document.form1.num2.value);
+				document.write(SUM1)
+			}
+
+		</script>
+	</head>
+
+	<body bgcolor="black" text="white" onload="arraydeclare()">
+	
+		<h1> CANCATINATING (CALLING FUNCTIONS) </h1>
+
+		<form name="form1">
+			<label for="num1">
+				Enter First Word
+			</label>
+			<input name="num1" id="num1">
+
+			<br>
+
+			<label for="num2">
+				Enter Second Word
+			</label>
+			<input name="num2" id="num2">
+		</form>
+
+		<br>
+
+		<button onclick="addition1(document.form1.num1.value,document.form1.num2.value)">
+			Add These Values
+		</button>
+
+
+		<button onclick="addition12(document.form1.num1.value,document.form1.num2.value)">
+			Add These Values By Return Method
+		</button>
+
+		
+		<button onclick="printbyfuctionexpression()">
+			Add These Values By Function Expression
+		</button>
+
+
+
+
+
+	</body>
+</html>

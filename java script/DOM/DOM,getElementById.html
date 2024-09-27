@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+	</head>
+
+	<body bgcolor="black" text="white">
+
+        <!-- <b>  ==  bold  -->
+
+        <h1 id="print"> <b>  Changing by getElementById     </b> </h1>
+        <h1 id="OK"> <b>  PRINTING by getElementById     </b> </h1>
+        <h3 class="classn"> PRINTING by getElementById  by indentation using tag name </h3>
+        
+
+        <button onclick="gebi()"> Click to change by getElementById </button>
+		<script>
+
+            //get element by id  ==  element ko id ke through use karna
+
+            //.innerHTML html ke andar me same id wala
+
+            //if we want to write
+
+            document.write("<br> <br> "+document.getElementById("OK").innerHTML);
+
+            //if we want by the tag name
+
+           //it should be given indent number
+
+            
+            //error  == 
+            //document.write(document.getElementsByTagName("h3").innerHTML);
+            
+            //right  ==
+
+            document.write("<br> <br>" , document.getElementsByTagName("h3")[0].innerHTML);
+
+            //if we want by class name
+            document.write("<br> <br>" , document.getElementsByClassName("classn")[0].innerHTML);
+
+
+            function gebi(){
+
+                //if we need to change
+
+                document.getElementById("print").innerHTML="Changed";   
+            }
+
+            function changetcolorcyan(){
+                document.getElementsByTagName('body')[0].style.color="cyan";
+            }
+
+            function changetcolorred(){
+                document.getElementsByTagName('body')[0].style.color="red";
+            }
+
+            function changetcolorwhite(){
+                document.getElementsByTagName('body')[0].style.color="white";
+            }
+
+            function changetcoloryellow(){
+                document.getElementsByTagName('body')[0].style.color="yellow";
+            }
+
+            function changetcolorblack(){
+                document.getElementsByTagName('body')[0].style.color="black";
+            }
+
+
+
+
+            function changebcolorcyan(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="cyan";
+            }
+
+            function changebcolorred(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="red";
+            }
+
+            function changebcolorwhite(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="white";
+            }
+
+            function changebcoloryellow(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="yellow";
+            }
+
+            function changebcolorblack(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="black";
+            }
+
+            
+
+		</script>
+
+        <br> <br> <br> <br> <br> <br> 
+
+        <h1>   Change text color   </h1>
+
+        <div style="background-color: blue">
+
+            <button onclick="changetcolorcyan()" style="background-color:cyan">
+              Change Color(Editting[cyan])
+            </button>
+
+            <button onclick="changetcolorred()" style="background-color:red">
+             Change Color(Editting[red])
+            </button>
+
+            <button onclick="changetcolorwhite()" style="background-color:white">
+                Change Color(Editting[white])
+            </button>
+
+            <button onclick="changetcoloryellow()" style="background-color:yellow">
+                Change Color(Editting[yellow])
+            </button>
+
+            <button onclick="changetcolorblack()" style="Color:yellow;background-color:black">
+                Change Color(Editting[black])
+            </button>
+
+            <br> <br>
+
+
+        </div>
+
+
+<br>
+
+    <h1>   Change Background color   </h1>
+
+        <div style="background-color: grey">
+
+            <button onclick="changebcolorcyan()" style="background-color:cyan">
+              Change Color(Editting[cyan])
+            </button>
+
+            <button onclick="changebcolorred()" style="background-color:red">
+             Change Color(Editting[red])
+            </button>
+
+            <button onclick="changebcolorwhite()" style="background-color:white">
+                Change Color(Editting[white])
+            </button>
+
+            <button onclick="changebcoloryellow()" style="background-color:yellow">
+                Change Color(Editting[yellow])
+            </button>
+
+            <button onclick="changebcolorblack()" style="Color:yellow;background-color:black">
+                Change Color(Editting[black])
+            </button>
+
+            <br> <br>
+
+        </div>    
+
+        
+        
+
+
+
+       
+
+	</body>
+</html>

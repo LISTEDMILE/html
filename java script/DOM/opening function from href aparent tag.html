@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>
+            Opening function using href apperant tag
+        </title>
+
+        <script language="javascript">
+
+
+            var t;
+
+            function open1(){
+                t=window.open("http://127.0.0.1:3000/html/HTML%20PRACTICAL/java%20script/DOM/queryselector.html","_blank","height=400px,width=300px,left=200px,top=200px");
+            }
+
+            function close1(){
+                t.close();
+            }
+
+        </script>
+        
+    </head>
+
+    <body bgcolor="black" text="white">
+
+        <h1>  Opening function using href apperant tag  </h1>
+
+        <!--    can write javascript function in href  -->
+        
+        <a href="javascript:close1()">  OPEN  </a>
+        <a href="javascript:open1()">  CLOSE  </a>
+    </body>
+</html>

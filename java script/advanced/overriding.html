@@ -1,0 +1,22 @@
+<script>
+    function multiply(a,b,c){
+        return a*b*c;
+    }
+    function multiply(a,b){
+        return a*b;
+    }
+    document.write(multiply(2,1,3));
+
+
+    //here alert will run simply...
+
+    alert('page');
+
+    //by this alert is a function now...
+    
+    var alert=function(a){
+        document.write(a);
+    }
+
+    alert('page');
+</script>

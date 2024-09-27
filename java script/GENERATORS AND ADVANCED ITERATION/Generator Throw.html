@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          GENERATOR THROW
+        </title>
+
+        <script>
+        
+            function* gen(){
+                try{
+                let result=yield "2+2=?";
+                alert("done");
+            }
+            catch(e){
+                elert();
+            }
+            }
+
+            let generator=gen();
+            let first=generator.next().value;
+            generator.throw(new Error("done now"));       
+                </script>
+    </head>
+    <body bgcolor="black">
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           SYMBOL ITERATOR
+        </title>
+
+        <script>
+        
+        
+        let range={
+            from:1,
+            to:20,
+            *[Symbol.iterator](){
+                for (let value1=this.from;value1<=this.to;value1++){
+                    yield value1;
+                }
+            }
+        }
+        console.log([...range]);
+           </script>
+    </head>
+    <body bgcolor="black">
+
+    </body>
+</html>

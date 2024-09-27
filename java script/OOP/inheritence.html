@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            INHERITANCE
+        </title>
+        <script>
+            class dryfruits{
+almond(){
+    alert("almond is a fruit");
+}
+            }
+
+
+            // here ((((extends))))   keyword is used to inherit froperties of dry fruits to fruits ....
+
+            // here if we use almond function it will  simply work as it has inherited from dry fruits.....
+            
+            
+            
+            class fruits extends dryfruits{
+                banana(){
+                    
+                    alert("banana is a fruit");
+                }
+
+            }
+
+            var x=new fruits;
+        </script>
+
+        <style>
+            button{
+                background-color: aqua;
+                color:black;
+                width:400px;
+                height:100px;
+                display:block;
+                font-size: 60px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border:4px solid white;
+                margin:50px;
+                border-radius: 10px;
+
+            }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <center>
+<button onclick="x.banana()">
+BANANA
+</button>
+<button onclick="x.almond()">
+    ALMOND
+</button>
+
+</center>
+    </body>
+</html>

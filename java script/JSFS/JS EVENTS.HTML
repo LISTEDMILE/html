@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  EVENTS  </title>
+		<script language="javascript" type="text/javascript">
+			function mouseover1(){
+				alert("The mouse is on the button")
+			}
+
+
+			function mouseout1(){
+				alert("The mouse is out the button")
+			}
+
+
+			function notclick(){
+				alert("Button not for clicking")
+			}
+
+
+			function mousedown1(){
+				alert("Mouse down")
+			}
+
+
+			function keydownevent(){
+				alert("Any key is pressed")
+			}
+
+
+			//var password1=document.querySelector('.button');
+			//password1.addEventListener("click",keydownevent)
+			//	e.target.style.backgroundColor="blue";
+			//})
+
+			//password.addEventListener('blur',(e)=>{
+			//	e.target.style.background='';
+			//})
+		</script>
+    </head>
+
+	<!-- onload used when we want something to happen afer the checking the page is loaded successfully or not-->
+    <body bgcolor="black" text="white" onload="window.alert('The page is loaded successfully')">
+
+		<!--used when want something if mouse move over-->
+
+		<button onclick="notclick()" onmouseover="mouseover1()">
+			Mouse over button
+		</button>
+
+		<!--//used when want something if mouse move out or click-->
+
+		<button onclick="notclick()" onmouseout="mouseout1()">
+			Mouse hower button
+		</button>
+
+		<!--if mouse is taken down of something-->
+		<!--EXPERIMENTAL FOR NOW-->
+
+		<button onclick="notclick()" onmousedown="mousedown1()">
+			Mouse down button
+		</button>
+
+		<!-- koi bhi key press karo input ke andar to kya ho
+		keydown ki jagah agar key up bhi use kre to bhi same  -->
+		
+		<input type="text" onkeydown="keydownevent()">
+
+		<form id="form1" action="#" onsubmit="alert('The form is submitted properly')">
+			<input type="password" placeholder="password">
+			<input type="submit" vaalue="submit">
+		</form>
+
+
+
+		
+
+
+        
+
+			
+		
+
+
+		
+	</body>
+</html>

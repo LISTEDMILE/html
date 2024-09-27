@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  COMPARISON STATEMENTS  </title>
+		<script language="javascript" type="text/javascript">
+			function number(){
+				var n=prompt("Please enter the number to check if the no is greater tham, equal to or less than 5")
+				if (n<5){
+					alert(n+" is lesser than 5")
+				}
+				else if (n>5){
+					alert(n+" is greater than 5")
+				}
+				
+				else if (n=5){
+				alert(n+" is equal to 5")
+				}
+			}
+
+
+			function Grades(){
+				if(document.form.form1.value>=90)
+				{
+					alert("A+");
+				}
+
+				else if(document.form.form1.value<90 &&
+				document.form.form1.value>=80)
+				{
+					alert("A");
+				}
+
+				else if(document.form.form1.value<80 &&
+				document.form.form1.value>=70)
+				{
+					alert("B+");
+				}
+
+				else if(document.form.form1.value<70 &&
+				document.form.form1.value>=60)
+				{
+					alert("B");
+				}
+
+				else
+				{
+					alert("C");
+				}
+			}
+
+
+			function gradesbyternary(){
+
+				// we can directly bring out a command if the condition is true or another command if the condition is false
+
+				(document.form.form1.value>=90)?alert("A+"):
+				(
+					(document.form.form1.value>=80)?alert("A"):
+					(
+						(document.form.form1.value>=70)?alert("B+"):
+						(
+							(document.form.form1.value>=60)?alert("B"):
+								alert("C")
+						)
+					)
+				)
+			}
+
+				// we can assign value to a variable by TERNARY OPERATORS
+			function vargradesbyternary(){
+				var r=(document.form.form1.value>=90)?"A+":
+				(
+					(document.form.form1.value>=80)?"A":
+					(
+						(document.form.form1.value>=70)?"B+":
+						(
+							(document.form.form1.value>=60)?"B":
+								"C"
+						)
+					)
+				)
+				document.write(r)
+			}
+		</script>
+    </head>
+    <body bgcolor="black" text="white">
+
+		<button onclick="number()">
+			Please enter the number to check if the no is greater tham, equal to or less than 5
+		</button>  <br>  <br>
+
+		<form name="form" action="#">
+			<label for="form1">
+				Checking Result
+			</label>
+			<input type="number" placeholder="Please enter the Marks" value="" name="form1">  <br>  <br>
+			<input type="button" value="By conditions" onclick="Grades()">
+			<input type="button" value="By Ternary Operator Direct Alert Method" onclick="gradesbyternary()">  <br> <br>
+			<input type="button" value="By Ternary Operator by storing in variable " onclick="vargradesbyternary()">
+		</form>
+
+
+        
+
+			
+		
+
+
+		
+	</body>
+</html>

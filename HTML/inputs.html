@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>vvt
+    <head>
+        <title>  FORMS INPUTS  </title>
+    </head>
+    <style>
+        h1 {color:aqua; border:3px solid red; font-size:60px}
+        h2 {color:aquamarine; border:2px solid yellow; font-size:40px}
+        h3 {color:rgb(230, 180, 105); border:1px solid coral; font-size:30px}
+        
+    </style>
+    <body bgcolor="black" text="white">
+        <h1 align="middle">
+            FORMS INPUTS
+        </h1>
+        <hr>
+        <!--#=/form-[ FILE NAME ]-->
+        <form action="#" method="post">
+            <h2 align="middle">
+                NAME
+            </h2>
+            <label for="fname">
+                First Name:
+            </label>
+            <input type="text" name="First Name" id="fname" readonly value="JOHN">        <!-- READ ONLY === INPUT PAR KUCH CHANGE NA KAR SKE-->
+            <br> <br>
+            <label for="lname">
+                Last Name:
+            </label>
+            <input type="text" name="Last Name" id="lname" readonly value="THE DON">
+            <br> <br>
+            <label for="Username">
+                Username:
+            </label>
+            <input type="text" name="Username" id="Username" disabled value="JOHN@DON">        <!--DISABLED VALUE === INPUT H PAR KOI CHANGE NHI KAR SKTA-->
+            <br> <br>
+            <label for="Phone number">
+                Phone number:
+            </label>
+            <input type="number" name="Phone number" min="9000000000" max="9999999999" id="Phone number">
+            <br> <br>
+            <label for="Color">
+                Pick a color
+            </label>
+            <input type="color" id="Color" name="Color">
+            <br> <br>
+            <label for="email">
+                Write your Email
+            </label>
+            <input type="email" id="email" autofocus name="email" placeholder="xyz@gmail.com">         <!--AUTOFOCUS === KHUD HIGHLIGHT KARNE KE LIYE  ||| PLACEHOLDER === NAM DEFAULT ME RAKHNE KE LIYE-->
+            <br> <br>
+            <label for="Password">
+                Password:
+            </label>
+            <input type="password" autofocus name="Password" required size="40px" id="Password" maxlength="16" minlength="8">
+            <br> <br>
+            <label for="Date">
+                Enter the date
+            </label>
+            <input type="date" id="Date" name="Date">
+            <input type="hidden" id="Hidden" name="Hidden" value="1234">     <!--hidden wale apne liye hote h-->
+            <br> <br>
+            <label for="Number">
+                Write the number
+            </label>
+            <input type="number" id="Number" name="Number" min="0" max="5000" value="123">  <!-- Value === koi default value dene ke liye-->
+            <br> <br>
+            <label for="File selection">
+                Select the file
+            </label>
+            <input type="file" id="File selection" name="File selection">
+            <hr>
+            <h2 align="middle">
+                GENDER
+            </h2>
+            <input type="radio" value="Male" name="gender" id="Male">
+            <label for="Male">
+                Male
+            </label>
+            <br>
+            <input type="radio" value="Female" name="gender" id="Female">
+            <label for="Female">
+                Female
+            </label>
+            <br>
+            <input type="radio" value="Other" name="gender" id="Other">
+            <label for="Other">
+                Other
+            </label>
+            <hr>
+            <fieldset>    <!--FIELDSET === alag se box type me group karne ke liye-->
+                <legend>   <!--LEGEND === fieldset ka title yha likh skte h-->
+                    VEHICLE INFORMATION
+                </legend>
+            <h2 align="middle">
+                VEHICLE
+            </h2>
+            <input type="checkbox" value="Car" id="Car" name="Car">
+            <label for="Car">
+                Car
+            </label>
+            <br>
+            <input type="checkbox" value="Bike" id="Bike" name="Bike">
+            <label for="Bike">
+                Bike
+            </label>
+            <br>
+            <input type="checkbox" value="Boat" id="Boat" name="Boat">
+            <label for="Boat">
+                Boat
+            </label>
+            <h3 align="middle">
+                MODEL
+            </h3>
+            <h4>
+                Select your model
+            </h4>
+            <input type="radio" value="o" name="no. of vehicles" id="Model3">
+            <label for="Model3">
+                If one
+            </label>  &nbsp
+            <select id="Model" name="Model" size="1">
+                <option value="Volvo">
+                    Volvo
+                </option>
+                <option value="Toyota" selected>
+                    Toyota
+                </option>
+                <option value="Audi">
+                    Audi
+                </option>
+            </select>
+            <br> <br>
+             <input type="radio" value="o" name="no. of vehicles" id="Model4">
+             <label for="model4">
+                If multiple
+             </label>
+             <select id="Model" name="Model" size="2" multiple>  <!--MULTIPLE === if multiple inputs nedded-->
+                 <option value="Volvo">
+                     Volvo
+                 </option>
+                 <option value="Toyota" selected>    <!--SEKECTED === matlab default me selected par change kar skte ho-->
+                     Toyota
+                 </option>
+                 <option value="Audi">
+                     Audi
+                 </option>
+             </select>
+             </fieldset>
+            <h2 align="middle">
+                What's your comment?
+            </h2>
+            <label for="Comment">
+                Please write your comment
+            </label>
+            <br>
+            <textarea id="Comment" name="Comment" cols="100" rows="10">
+                You can write here 
+            </textarea>   <!--TEXTAREA === user ki marzi se kuch likhne ke liye-->
+            <hr>
+            <h2 align="middle">
+                What's your browsers?
+            </h2>
+            <label for="browsers">
+                Select a browser
+            </label>
+            <input list="Browsers" id="browsers">   <!-- agar option bhi ho aur hmm khud bhi kuch chahe to add kar ske-->
+            <datalist id="Browsers">
+                <option value="Chrome">
+                </option>
+                <option value="Firefox">
+                </option>
+                <option value="UC Browsers">
+                </option>
+                <option value="Brave">
+                </option>
+                <option value="Opera Mini">
+                </option>
+                <option value="Internet Explorar">
+                </option>
+                <option value="Safari">
+                </option>
+            </datalist>
+            <hr>
+            <label for="bottonw">
+                Click here to open file "web.html"...
+            </label>
+            <a href="meta starting.html">
+            <button type="button" id="buttonw" onclick="alert('Click ok to open file')">
+                Click me
+            </button>
+            </a>
+            <br> <br>
+            <label for="bottonr">
+                Click here to reset form values...
+            </label>
+            <input type="reset" id="buttonr" value="Reset default values">
+            <br> <br>
+            <label for="bottons">
+                Click here to submit the "Form"...
+            </label>
+            <input type="submit" id="bottons" value="Submit Here" onclick="alert('Your form is submitted. Plz check once if error comes, the file will not be submitted')">
+
+
+        </form>
+    </body>
+</html>

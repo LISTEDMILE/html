@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  ASSIGNING VALUES  </title>
+    </head>
+    <style>
+        h1 {color:aqua; border:3px solid red; font-size:60px}
+        h2 {color:aquamarine; border:2px solid yellow; font-size:40px}
+        h3 {color:rgb(230, 180, 105); border:1px solid coral; font-size:30px}
+        
+    </style>
+    <body bgcolor="black" text="white">
+        <h1 align="middle">
+            ASSIGNING VALUES
+		</h1>
+            
+		<!--functions   -->
+    	
+		<button onclick="assign1()">    1    </button>  <br>
+        <button onclick="assign2()">  2  </button>  <br>
+        <button onclick="assign3()">  3  </button>  <br>
+        <button onclick="assign4()">  4  </button>  <br>
+        <button onclick="assigna()">  x=x+1  </button>  <br> <br>
+
+        <!--alert = button click ke bad kuch alert karke ok click kraega-->
+
+        <label for="alertfunction">
+            Hello
+        </label>
+        <button onclick="alertfunction()" id="alertfunction">Alert Box</button>  <br> <br>
+
+        <label for="Your Name">
+            Your Name
+        </label>
+        <button onclick="promptinput()" id="Your Name">  Enter Your Name </button>  <br> <br>
+
+        <label for="confirmbutton">
+            Click here to confirm
+        </label>
+        <button onclick="confirmbutton()" id="confirmbutton"> Click </button>
+        <script type="text/javascript" language="javascrpipt">
+
+            
+            
+			var x=0;
+            function assign1(){x=1
+                document.write("x="+x)};
+            function assign2(){x=2
+                document.write("x="+x)};
+            function assign3(){x=3
+                document.write("x="+x)};
+            function assign4(){x=4
+                document.write("x="+x)};
+            function assigna(){x=x+1
+                document.write("x="+x)};
+
+            //dialog box uper wala
+
+            //alert karke ok ya cancel mangega
+
+            function alertfunction(){
+                alert("hello")
+            };
+
+            //dialog box me variable ki value lene ke liye
+
+            function promptinput(){
+                var p=prompt("Please enter your name","Name");
+                document.write(p);
+            };
+
+            //confirm statement deke agar ok to aage kaega nhi to nhi
+
+            function confirmbutton(){
+                confirm("Please press the button to continue")
+            };
+            document.write(u)
+        </script>
+    </body>
+</html>

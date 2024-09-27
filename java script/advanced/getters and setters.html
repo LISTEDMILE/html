@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GETTERS AND SETTERS
+        </title>
+        <style>
+            *{
+                color:white;
+            }
+            button{
+                width:400px;
+                height:67px;
+                font-size: 50px;
+                background-color:aqua;
+                color:black;
+                border:3px solid white;
+                display:block;
+                margin:60px;
+            }
+            h1{
+                font-size: 70px;
+                border:solid white;
+                border-width: 0px 3px 3px 0px;
+            }
+        </style>
+        <script>
+            var fruits={
+                type:"banana",
+                colour:"red",
+
+                get col(){
+                    return this.colour;
+                },
+
+                set col(a){
+                    this.colour=a;
+                }
+            }
+
+            //calling set function with RED parameter...
+
+            function yes(){
+                fruits.col="RED";
+            }
+
+            function no(){
+                fruits.col="YELLOW";
+            }
+
+            function get1(){
+                document.getElementById("heading").innerHTML=fruits.col;
+            }
+        </script>
+    </head>
+    <body bgcolor="black">
+        <center>
+        <button onclick="yes()">
+            set RED
+        </button>
+        <button onclick="no()">
+           set YELLOW    
+        </button>
+
+       
+            <button onclick="get1()">
+                GET
+            </button>
+
+
+        <h1 id="heading">
+            ANSWER
+        </h1>
+    </center>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+
+    <head>
+
+        <title>
+            CONSTRUCTOR
+        </title>
+
+       
+
+    </head>
+
+    <body>
+
+<p id="a">
+</p>
+        <script>
+            function h(a1,a2,a3){
+
+
+              //  this  -->  matlab parent wale me (andar)
+                
+                this.fname=a1;
+                this.mname=a2;
+                this.lname=a3;
+            }
+
+            /// new  -->  matlab ek variable me ek nya function ambedd kiya h
+
+            // here t me h ambedd hua h
+
+            var t=new h("you","me","i");
+
+            /* t.fname  matlab t me function uper store kiya h 
+            function me fname ke andar first parameter store 
+            kiya h to yha fname me forst argument store hoga (you)
+            */
+
+
+            document.write(t.fname+"\n");
+            document.getElementById("a").innerHTML=t.fname;
+            document.write(t.mname+"\n");
+            document.getElementById("a").innerHTML=t.mname;
+           
+            document.write(t.lname);
+           
+            //get element by id me bar bar change hota rhega to last me lname bachega
+            
+            document.getElementById("a").innerHTML=t.lname;
+
+            
+        </script>
+
+</body>
+</html>

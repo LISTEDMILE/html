@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  ARRAYS IN JAVA SCRIPT  </title>
+		
+
+		<script type="text/javascript" language="javascript">
+		
+			var array=[];
+
+			var arraysorting=[];
+
+			
+
+			function add1(){
+				array.push(1);
+			}
+
+			function add2(){
+				array.push(2);
+			}
+
+			function add3(){
+				array.push(3);
+			}
+
+			function add4(){
+				array.push(4);
+			}
+
+			function add5(){
+				array.push(5);
+			}
+			
+			function addsomething(){
+				array.push(document.form1.text1.value);
+			}
+
+		    function print(){
+				document.write(array)
+			}	
+
+			function printindex(){
+				document.write(array[document.form2.indexprint.value])
+			}
+
+			//  sorting arrays....
+
+			function adda(){
+				arraysorting.push("a");
+			}
+
+			function addb(){
+				arraysorting.push("b");
+			}
+
+			function addc(){
+				arraysorting.push("c");
+			}
+
+			function addd(){
+				arraysorting.push("d");
+			}
+
+			function adde(){
+				arraysorting.push("e");
+			}
+
+			function addsomething1(){
+				arraysorting.push(document.form3.text2.value);
+			}
+
+		    function print1(){
+				document.write(arraysorting);
+			}
+			
+			function printsortedarray1(){
+				var sortedlist1=arraysorting.sort();
+				document.write(sortedlist1);
+			}
+
+			function sortwholearray(){
+
+				// .sort() used for sorting like a---z
+				
+				arraysorting.sort();
+			}
+
+			function printindex1(){
+				document.write(arraysorting[document.form4.indexprint1.value]);
+			}
+
+			function printsortedindex1(){
+				var sortedlist2=arraysorting.sort();
+				document.write(sortedlist2[document.form4.indexsortedprint1.value]);
+			}
+
+
+
+		</script>
+	</head>
+
+	<body bgcolor="black" text="white" onload="arraydeclare()">
+
+		<hr>
+
+		<div style="border:2px solid red">
+		<h1>Add numbers to the array</h1>
+
+		
+		<button onclick="add1()">
+			Add "1"
+		</button>
+
+		<button onclick="add2()">
+			Add "2"
+		</button>
+
+		<button onclick="add3()">
+			Add "3"
+		</button>
+
+		<button onclick="add4()">
+			Add "4"
+		</button>
+
+		<button onclick="add5()">
+			Add "5"
+		</button>
+
+		<br> <br>
+
+		<form name="form1">
+			<label id="write">
+				Enter something to add in the array
+			</label>
+			<input type="text" value="1" name="text1" id="write">
+		</form>
+
+		<button onclick="addsomething()">
+			Add the value in input box
+		</button>
+
+
+		<br> <br>
+
+
+
+
+			<hr>
+
+			<br>
+
+			<button onclick="print()">
+				Print Array
+			</button>
+
+			<br><br>
+
+			<form name="form2">
+
+
+				<label id="index">
+					Particular Index
+				</label>
+				<input type="number" value="1" name="indexprint" id="index">
+
+				<button onclick="printindex()">
+					Print value at the index given
+				</button>
+
+			</form>
+
+
+			<br><br>
+
+
+		</div>
+
+		<br>
+
+
+		<div style="border:2px solid yellow">
+			<h1>Add text to the array</h1>
+	
+			
+			<button onclick="adda()">
+				Add "a"
+			</button>
+	
+			<button onclick="addb()">
+				Add "b"
+			</button>
+	
+			<button onclick="addc()">
+				Add "c"
+			</button>
+	
+			<button onclick="addd()">
+				Add "d"
+			</button>
+	
+			<button onclick="adde()">
+				Add "e"
+			</button>
+	
+			<br> <br>
+	
+			<form name="form3">
+				<label id="write1">
+					Enter something to add in the array
+				</label>
+				<input type="text" value="a" name="text2" id="write1">
+			</form>
+	
+			<button onclick="addsomething1()">
+				Add the value in input box
+			</button>
+	
+	
+			<br> <br>
+	
+	
+	
+	
+			<hr>
+	
+				<br>
+	
+				<button onclick="print1()">
+					Print Array
+				</button>
+
+				<button onclick="printsortedarray1()">
+					Print Sorted Array
+				</button>
+
+				<button onclick="sortwholearray()">
+					Sort Whole Array
+				</button>
+	
+				<br><br>
+	
+				<form name="form4">
+	
+	
+					<label id="index1">
+						Particular Index
+					</label>
+					<input type="number" value="1" name="indexprint1" id="index1">
+	
+					<button onclick="printindex1()">
+						Print value at the index given
+					</button>
+
+					<br>
+
+					<label id="indexsorted1">
+						Particular Index of sorted list
+					</label>
+					<input type="number" value="1" name="indexsortedprint1" id="indexsorted1">
+	
+					<button onclick="printsortedindex1()">
+						Print value at the index given
+					</button>
+	
+				</form>
+	
+	
+				<br><br>
+	
+	
+			</div>
+
+
+		
+
+		
+		
+	</body>
+</html>

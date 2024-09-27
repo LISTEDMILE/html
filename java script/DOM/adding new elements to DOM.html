@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>
+    
+            ADDING NEW ELEMENTS TO DOM
+    
+        </title>
+
+ 
+    </head>
+    <body>
+        
+        <div id="ty">
+
+            <h1>
+                SOMETHING
+            </h1>
+
+           
+
+            <button onclick="ANEOD()">
+            Click to write WOW
+            </button>
+
+        
+        </div>
+    
+
+
+
+
+        <script>
+
+            function ANEOD(){
+
+
+                //crete element== to create a element
+                // create text node ==  add text
+                // var1.appendChild(var2); ==  matlab var1 me var 2 add kar diya andar
+                
+            var cr_el=document.createElement("div");
+            var te_no=document.createTextNode("WOW");
+            cr_el.appendChild(te_no);
+            var new1=document.createElement("div");
+            new1.appendChild(cr_el);
+            
+            document.getElementById("ty").appendChild(new1);
+            }
+
+        
+
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            INHERITANCE
+        </title>
+        <script>
+            class dryfruits{
+                constructor(){
+                    this.y="almond";
+                 
+                }
+almond(){
+    document.write(this.y);
+}
+            }
+
+
+          
+            
+            class fruits extends dryfruits{
+                constructor(){
+
+                    // super keyword is used to invoke parent class as constructor only in derieved class can not be used....   
+
+                    // simply call parent construction here....
+
+                    super();
+                    this.z="banana";
+                    
+                }
+                
+                banana(){
+
+                    //here if want to call directly a function like(((((    almond()   )))))
+                    // then error will occur but to use it we can use (((((     super.almond()     )))))
+
+                    super.almond();
+
+
+                    document.write(this.z);
+                }
+
+            }
+
+            var x=new fruits();
+        </script>
+
+        <style>
+            button{
+                background-color: aqua;
+                color:black;
+                width:400px;
+                height:100px;
+                display:block;
+                font-size: 60px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border:4px solid white;
+                margin:50px;
+                border-radius: 10px;
+                
+            }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <center>
+<button onclick="x.banana()">
+BANANA
+</button>
+<button onclick="x.almond()">
+    ALMOND
+</button>
+
+</center>
+    </body>
+</html>

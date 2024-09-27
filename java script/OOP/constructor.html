@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CONSTRUCTORS
+        </title>
+        <script>
+
+
+// here we create a function with mltiple parameters with certain variables    ......
+
+
+            function human(name,lastname,age){
+                this.firstname=name;
+                this.lastname=lastname;
+                this.age=age;
+
+            }
+
+
+            // here we can use new variables to store them in the single varible but with the same class elements....
+
+
+            // here new human means a new var roshan is created with human type entries.....
+
+            var roshan=new human('roshan','singh',50);
+            var rakesh=new human('rakesh','prajapati',30);
+            var rakhi=new human('rakhi','mishra',25);
+            var rahul=new human('rahul','negi',15);
+
+
+            function roshan1(){
+                document.getElementById('name').innerHTML=roshan.firstname;
+                document.getElementById('lastname').innerHTML=roshan.lastname;
+                document.getElementById('age').innerHTML=roshan.age;
+            }
+
+            function rakesh1(){
+                document.getElementById('name').innerHTML=rakesh.firstname;
+                document.getElementById('lastname').innerHTML=rakesh.lastname;
+                document.getElementById('age').innerHTML=rakesh.age;
+            }
+
+            function rakhi1(){
+                document.getElementById('name').innerHTML=rakhi.firstname;
+                document.getElementById('lastname').innerHTML=rakhi.lastname;
+                document.getElementById('age').innerHTML=rakhi.age;
+            }
+
+            function rahul1(){
+                document.getElementById('name').innerHTML=rahul.firstname;
+                document.getElementById('lastname').innerHTML=rahul.lastname;
+                document.getElementById('age').innerHTML=rahul.age;
+            }
+        </script>
+        <style>
+            button{
+                background-color: aqua;
+                height:150px;
+                width:400px;
+                font-size: 40px;
+            }
+            #d1{
+                width:100vw;
+                display:flex;
+                height:50vh;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-content: space-around;
+               
+             
+            }
+            h1{
+                color:white;
+                text-align: center;
+                margin-top:20px;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <div id="d1">
+            <button onclick="roshan1()">
+                roshan
+            </button>
+            <button onclick="rakesh1()">
+                rakesh
+            </button>
+            <button onclick="rakhi1()">
+               rakhi
+            </button>
+            <button onclick="rahul1()">
+                rahul
+            </button>
+        </div>
+
+        <h1 id="name">
+            NAME
+        </h1>
+        <h1 id="lastname">
+            LAST NAME
+        </h1>
+        <h1 id="age">
+            AGE
+        </h1>
+    </body>
+</html>

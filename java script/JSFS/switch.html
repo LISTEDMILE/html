@@ -1,0 +1,105 @@
+		
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  SWITCH CONDITIONS  </title>
+		
+
+		<script type="text/javascript" language="javascript">
+			/*var d=new Date();
+			switch(d.getdate()){
+					case 0:
+						document.write("m=1");
+						break;
+
+
+					case 1:
+						document.write("m=1");
+						break;
+
+					case 2:
+						document.write("m=1");
+						break;
+
+					case 3:
+						document.write("m=1");
+						break;
+
+					case 4:
+						document.write("m=1");
+						break;
+
+					case 5:
+						document.write("m=1");
+						break;
+
+					case 6:
+						document.write("m=1");
+						break;
+
+
+					default:
+						document.write(";ljfladks");*/
+
+
+			//just like if, else if, else condition
+
+			function switchstart(){
+				switch(document.form1.ABC.value){
+					case 'A':
+						document.write("m=1");
+						break;
+
+					case 'B':
+						document.write("m=2");
+						break;
+
+					case 'C':
+						document.write("m=3");
+						break;
+
+					default:
+						document.write("Nothing");
+						break;
+				}
+			}
+
+
+		</script>
+	</head>
+
+	<body bgcolor="black" text="white">
+
+		
+		
+		<hr>
+
+		<form name="form1" action="#">
+			<label for="ABC">
+				Enter ABC
+			</label>
+			<input type="text" value="" id="ABC" name="ABC">
+
+
+			<button onclick="switchstart()">
+				[Start]
+			</button>
+
+			
+		</form>
+
+		
+
+
+		
+
+
+        
+
+			
+		
+
+
+		
+	</body>
+</html>

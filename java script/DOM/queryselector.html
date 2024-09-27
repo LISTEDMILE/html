@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  QUERYSELECTOR  </title>
+		
+        <style>
+
+            h1 {color:aqua; border:solid yellow; font-size:50px;}
+            div { border:3px solid red;}
+            p {color:aquamarine; border:3px solid yellowgreen; font-size:40px;}
+            h2 {color:aqua; border:3px solid cornflowerblue; font-size:30px;}
+            
+        </style>
+
+    </head>
+
+    <body bgcolor="black" text="white">
+
+        <div>
+
+            <br>
+
+            P tag, class==tt
+
+            <p class="tt"> hi how are you <br>  </p>
+
+            <button onclick="g()">
+                click here to copy value of first (p tag) to hj(id)
+            </button> 
+
+            <button onclick="h()">
+                click here to write all values of .tt class
+           </button>
+
+        <br> <br>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <br>
+
+            P tag, class==tt
+            
+            <p class="tt"> hi how are you <br>  </p>
+
+            <button onclick="h()">
+                click here to write all values of .tt class
+            </button>
+
+        <br> <br>
+         
+        </div>
+
+        <br>
+
+        <div>
+    
+            <br>
+    
+            H1 , class ==hh
+            <h1 class="hh"> Something  ...... <br>  </h1>
+                <button onclick="a()">
+                    click to write whats in first H1
+                </button>
+
+              <button onclick="k()">
+                    click here to see any h1(tag)
+                </button>
+
+               <button onclick="b()">
+                    click to change whats in first H1
+                </button>
+
+                <button onclick="d()">
+                    click here to see any .hh(class)
+                </button>
+
+            <br> <br>
+
+        </div>
+
+        <br>
+    
+        <div>
+    
+            <br>
+    
+            H1 , class  ==  hh
+            <h1 class="hh"> Something  ......2 <br>  </h1>
+             
+                <button onclick="k()">
+                    click here to see any h1(tag)
+               </button>
+
+                <button onclick="d()">
+                    click here to see any .hh(class)
+                </button>
+
+            <br> <br>
+
+        </div>
+
+        <br>
+
+        <div>
+    
+            <br>
+    
+            H1 , class  ==  hhj   
+            <h1 class="hhj">Something  ......1 <br>  </h1>
+
+                <button onclick="k()">
+                    click here to see any h1(tag)
+                </button>
+
+            <br> <br>
+
+        </div>
+
+        <br>
+
+        <div>
+    
+            <br>
+    
+            H2, id  ==  hj        
+            <h2 id="hj">tertre <br>  </h2>
+
+                <button onclick="g()">
+                    click here to copy value of first (p tag) to hj(id)
+                </button>
+
+            <br> <br>
+
+        </div>
+
+        <br> <br>
+
+        <script language="javascript" type="text/javascript">
+			
+            function a(){
+                document.write(document.querySelector('h1').innerHTML);
+            }
+            //same as gerElementById but i target all together class tag and id...///
+            
+
+            function b(){
+                var c=prompt("please enter new H1");
+                document.querySelector("h1").innerHTML=c;
+            }      
+
+//All wala sare read karta h indentation se karna hoga
+
+
+            function k(){
+                var e=prompt("please enter which H1 you want");
+                document.write(document.querySelectorAll("h1")[e].innerHTML);
+            }
+
+            //for class  { . } is used before
+
+            function d(){
+                var f=prompt("please enter which class(.hh) you want");
+                const x=document.querySelectorAll('.hh')[f].innerHTML;
+                document.write(x)
+
+            }
+
+            function g(){
+                
+                //ye bhi decide kar skte h which tag it is part of
+
+                document.getElementById("hj").innerHTML=document.querySelector("p.tt").innerHTML;
+            }
+
+            function h(){
+
+                //agar poora chahiye to all lgake indentation mat likho
+
+                var z=document.querySelectorAll(".tt");
+                console.log(z);
+                document.write(" Check out console <br>"+z[0]);    
+            }
+            
+        </script>
+
+        
+
+			
+		
+
+
+		
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            REST PARAMETER
+        </title>
+
+        <script>
+            function add (a,b,...c){
+
+                //this is used when we want multiple arguments in one
+                //here firstly reduce is used to do some operation and join all other arguments in one argument (here c) just as we can join multiple arguments
+                //first two dotes add up to form joint argument then this new and third dot join then this again new created is joined with (c)....
+
+                return (a+b+c.reduce((first,second) => {
+                    return first+second;
+                }));
+            }
+            console.log(add(1,2,3,4,5,6,7,7));
+        </script>
+    </head>
+    <body bgcolor="black">
+
+    </body>
+</html>
